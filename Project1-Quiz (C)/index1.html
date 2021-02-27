@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<script type="text/javascript">
+    function display(form){
+        if(form.username.value=="rahul"){
+            if(form.password.value=="1234"){
+                location="index.html"
+            }
+            else{
+                alert("Invalid Password")
+            }
+        }
+        else{
+            alert("Invalied Username")
+        }
+    }
+
+</script>
+<body>
+    <form>
+        Username:<input type="text" name="username"><br><br>
+        Password:<input type="text" name="password"><br><br>
+        <input type="button" value="Login">
+    </form>
+    
+</body>
+</html>
